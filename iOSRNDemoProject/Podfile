@@ -1,8 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 
+source 'https://github.com/fishmwei/react-native-spec.git'
+
+project 'iOSRNDemoProject'
+
 platform :ios, '9.0'
 
-source 'https://github.com/fishmwei/react-native-spec.git'
 
 def react0493
   pod 'yoga', '0.49.3.React'
@@ -36,7 +39,9 @@ def react0493
   pod 'boost', '1.63.0'
 end
 
-
 target 'iOSRNDemoProject' do
-   react0493
+	react0493
+    
+    pod 'RNSVG', :path => '../RNDemo/node_modules/react-native-svg'
+    
 end

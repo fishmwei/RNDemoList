@@ -4,13 +4,27 @@
  * @flow
  */
 
-import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import screens from './screens';
 import ListScreen from "./screens/ListScreen";
-import { StackNavigator } from "react-navigation";
+import { StackNavigator } from "react-navigation"; 
 
-export default StackNavigator({
-    ListScreen: {
-        screen: ListScreen
+function getScreenConfig(allScreens) {
+    let ret = {};
+    allScreens.map((item, index)=>{
+        if (!item.screenName) {
+            console.warn('missed screenName, ', item);
+            return;
+        }
+
+        Object.assign(ret, {[item.screenName] : item});
+    })
+
+    return ret;
+}
+
+export default StackNavigator(
+    getScreenConfig(screens),
+    {
+        initialRouteName: screens[0].screenName
     }
-});
+);

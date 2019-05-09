@@ -15,7 +15,7 @@
 		5156CF052283143000685AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156CF042283143000685AF7 /* main.m */; };
 		5156CF0F2283143000685AF7 /* iOSRNDemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156CF0E2283143000685AF7 /* iOSRNDemoProjectTests.m */; };
 		5156CF1A2283143000685AF7 /* iOSRNDemoProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156CF192283143000685AF7 /* iOSRNDemoProjectUITests.m */; };
-		DFFF5F74CD71DB113AF7F3A5 /* libPods-iOSRNDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7F59A4812073563B6D19A /* libPods-iOSRNDemoProject.a */; };
+		B40EE08330B79EA76982FF4D /* libPods-iOSRNDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7F59A4812073563B6D19A /* libPods-iOSRNDemoProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		395F4481EDB29211ACFA94D9 /* Pods-iOSRNDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSRNDemoProject/Pods-iOSRNDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
 		401A2F22A8B99B743E194F12 /* libPods-iOSRNDemoProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSRNDemoProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5156CEF22283142D00685AF7 /* iOSRNDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSRNDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5156CEF52283142D00685AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,10 +54,9 @@
 		5156CF152283143000685AF7 /* iOSRNDemoProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSRNDemoProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5156CF192283143000685AF7 /* iOSRNDemoProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSRNDemoProjectUITests.m; sourceTree = "<group>"; };
 		5156CF1B2283143000685AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74C2B0EECDFEE563ED10A8EB /* Pods-iOSRNDemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNDemoProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSRNDemoProject/Pods-iOSRNDemoProject.debug.xcconfig"; sourceTree = "<group>"; };
+		532B52382B3BD6B6DE42D108 /* Pods-iOSRNDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSRNDemoProject/Pods-iOSRNDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		9CA7F59A4812073563B6D19A /* libPods-iOSRNDemoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSRNDemoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC68D7E9C6F0B80F1B24747 /* libPods-iOSRNDemoProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSRNDemoProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE892CF208C57A6B7C183616 /* Pods-iOSRNDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSRNDemoProject/Pods-iOSRNDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFF5F74CD71DB113AF7F3A5 /* libPods-iOSRNDemoProject.a in Frameworks */,
+				B40EE08330B79EA76982FF4D /* libPods-iOSRNDemoProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +154,8 @@
 		F1462D82AC0BA3C286CDA72D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				74C2B0EECDFEE563ED10A8EB /* Pods-iOSRNDemoProject.debug.xcconfig */,
-				FE892CF208C57A6B7C183616 /* Pods-iOSRNDemoProject.release.xcconfig */,
+				395F4481EDB29211ACFA94D9 /* Pods-iOSRNDemoProject.debug.xcconfig */,
+				532B52382B3BD6B6DE42D108 /* Pods-iOSRNDemoProject.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5156CF1E2283143000685AF7 /* Build configuration list for PBXNativeTarget "iOSRNDemoProject" */;
 			buildPhases = (
-				4A2053CC966A293913409836 /* [CP] Check Pods Manifest.lock */,
+				EEC8FEBF951B7BFD6C0986C1 /* [CP] Check Pods Manifest.lock */,
 				5156CEEE2283142D00685AF7 /* Sources */,
 				5156CEEF2283142D00685AF7 /* Frameworks */,
 				5156CEF02283142D00685AF7 /* Resources */,
@@ -287,20 +287,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A2053CC966A293913409836 /* [CP] Check Pods Manifest.lock */ = {
+		EEC8FEBF951B7BFD6C0986C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-iOSRNDemoProject-checkManifestLockResult.txt",
 			);
@@ -487,16 +483,13 @@
 		};
 		5156CF1F2283143000685AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74C2B0EECDFEE563ED10A8EB /* Pods-iOSRNDemoProject.debug.xcconfig */;
+			baseConfigurationReference = 395F4481EDB29211ACFA94D9 /* Pods-iOSRNDemoProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,16 +498,13 @@
 		};
 		5156CF202283143000685AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE892CF208C57A6B7C183616 /* Pods-iOSRNDemoProject.release.xcconfig */;
+			baseConfigurationReference = 532B52382B3BD6B6DE42D108 /* Pods-iOSRNDemoProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -528,11 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,11 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -565,11 +547,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,11 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
