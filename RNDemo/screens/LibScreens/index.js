@@ -1,4 +1,5 @@
 import SvgScreen from './SvgScreen';
+import ProgressScreen from './ProgressScreen';
 
-export default [SvgScreen];
+export default [SvgScreen, ProgressScreen];
 

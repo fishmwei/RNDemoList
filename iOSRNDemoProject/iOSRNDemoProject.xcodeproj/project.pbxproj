@@ -16,6 +16,7 @@
 		5156CF0F2283143000685AF7 /* iOSRNDemoProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156CF0E2283143000685AF7 /* iOSRNDemoProjectTests.m */; };
 		5156CF1A2283143000685AF7 /* iOSRNDemoProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5156CF192283143000685AF7 /* iOSRNDemoProjectUITests.m */; };
 		B40EE08330B79EA76982FF4D /* libPods-iOSRNDemoProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA7F59A4812073563B6D19A /* libPods-iOSRNDemoProject.a */; };
+		C1B806E122841AE900DAA83E /* RNDebugManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1B806E022841AE900DAA83E /* RNDebugManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		532B52382B3BD6B6DE42D108 /* Pods-iOSRNDemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSRNDemoProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSRNDemoProject/Pods-iOSRNDemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		9CA7F59A4812073563B6D19A /* libPods-iOSRNDemoProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSRNDemoProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC68D7E9C6F0B80F1B24747 /* libPods-iOSRNDemoProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSRNDemoProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1B806DF22841AE900DAA83E /* RNDebugManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNDebugManager.h; sourceTree = "<group>"; };
+		C1B806E022841AE900DAA83E /* RNDebugManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNDebugManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,7 @@
 		5156CEF42283142D00685AF7 /* iOSRNDemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				C1B806DD22841AAA00DAA83E /* react-native */,
 				5156CEF52283142D00685AF7 /* AppDelegate.h */,
 				5156CEF62283142D00685AF7 /* AppDelegate.m */,
 				5156CEF82283142D00685AF7 /* ViewController.h */,
@@ -149,6 +153,23 @@
 				AAC68D7E9C6F0B80F1B24747 /* libPods-iOSRNDemoProjectUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1B806DD22841AAA00DAA83E /* react-native */ = {
+			isa = PBXGroup;
+			children = (
+				C1B806DE22841AC000DAA83E /* debug */,
+			);
+			path = "react-native";
+			sourceTree = "<group>";
+		};
+		C1B806DE22841AC000DAA83E /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				C1B806DF22841AE900DAA83E /* RNDebugManager.h */,
+				C1B806E022841AE900DAA83E /* RNDebugManager.m */,
+			);
+			path = debug;
 			sourceTree = "<group>";
 		};
 		F1462D82AC0BA3C286CDA72D /* Pods */ = {
@@ -313,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5156CEFA2283142D00685AF7 /* ViewController.m in Sources */,
+				C1B806E122841AE900DAA83E /* RNDebugManager.m in Sources */,
 				5156CF052283143000685AF7 /* main.m in Sources */,
 				5156CEF72283142D00685AF7 /* AppDelegate.m in Sources */,
 			);
@@ -489,7 +511,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -504,7 +529,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,7 +546,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,7 +565,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,7 +583,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -561,7 +601,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H79W6YY34M;
 				INFOPLIST_FILE = iOSRNDemoProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.fishmwei.app.timeNote.iOSRNDemoProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

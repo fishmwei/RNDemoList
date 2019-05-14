@@ -5,7 +5,7 @@
  */
 
 import screens from './screens';
-import ListScreen from "./screens/ListScreen";
+import AnimatedScreen from './screens/APIsScreens/AnimatedScreen';
 import { StackNavigator } from "react-navigation"; 
 
 function getScreenConfig(allScreens) {
@@ -22,9 +22,12 @@ function getScreenConfig(allScreens) {
     return ret;
 }
 
+// 使用指定屏幕为首屏
 export default StackNavigator(
     getScreenConfig(screens),
     {
         initialRouteName: screens[0].screenName
     }
 );
+
+ 

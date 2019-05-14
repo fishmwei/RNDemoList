@@ -1,16 +1,21 @@
 import libScreens from '../LibScreens';
+import APIScreens from '../APIsScreens';
 
 const sectionDatas = [
     {
-        title: '控件使用',
+        title: 'Components',
         data: []
     },
     {
-        title: '库的使用',
+        title: 'Api',
+        data: APIScreens 
+    },
+    {
+        title: 'Libararies',
         data: libScreens
     },
     {
-        title: '测试',
+        title: 'Test',
         data: []
     },
 ];
