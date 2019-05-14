@@ -39,9 +39,39 @@ def react0493
   pod 'boost', '1.63.0'
 end
 
+
+def reactpath
+    pod 'React', :path=>'../RNDemo/node_modules/react-native', :subspecs => [
+    'ART',
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTCameraRoll',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTPushNotification',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'     ]
+    
+    pod 'yoga', :path=>'../RNDemo/node_modules/react-native/ReactCommon/yoga'
+    
+    pod 'DoubleConversion', :podspec => '../RNDemo/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+    pod 'glog', :podspec => '../RNDemo/node_modules/react-native/third-party-podspecs/glog.podspec'
+    pod 'Folly', :podspec => '../RNDemo/node_modules/react-native/third-party-podspecs/Folly.podspec'
+end
+
 target 'iOSRNDemoProject' do
-	react0493
+    #react0493
+    reactpath
     
+    pod 'RNGestureHandler', :path=>'../RNDemo/node_modules/react-native-gesture-handler'
     pod 'RNSVG', :path => '../RNDemo/node_modules/react-native-svg'
-    
+    pod 'RNScreens', :path=>'../RNDemo/node_modules/react-native-screens'
 end
